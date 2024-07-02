@@ -1,0 +1,74 @@
+#%RAML 1.0
+title: Calculalor-API
+protocols:
+  - HTTP
+
+/addition:
+  get:
+    queryParameters:
+      number1:
+        type: number
+        required: true
+      number2:
+        type: number
+        required: true
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                "result": "Addition is 10"
+              }
+/subtraction:
+  get:
+    queryParameters:
+      number1:
+        type: number
+        required: true
+      number2:
+        type: number
+        required: true
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                "result": "subtraction is 10"
+              }
+/multiplication:
+  get:
+    queryParameters:
+      number1:
+        type: number
+        required: true
+      number2:
+        type: number
+        required: true
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                "result": "multiplication is 10"
+              }
+/division:
+  get:
+    queryParameters:
+      number1:
+        type: number
+        required: true
+      number2:
+        type: number
+        required: true
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                "result": "division is 10"
+              }
+
